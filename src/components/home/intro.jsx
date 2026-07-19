@@ -39,12 +39,11 @@ const Intro = () => {
 
         <div className="max-w-5xl mx-auto text-center">
           <span className="text-sm font-semibold uppercase tracking-[0.25em] text-neutral-500">
-            About Us
+            Introduction
           </span>
 
           <h2 className="mt-6 text-[34px] leading-tight font-semibold tracking-tight text-neutral-900 md:text-5xl">
-            Guiding students toward world-class education 🎓 with trusted advice,
-            personalized support, and a seamless study abroad journey.
+            Start Your Study Abroad Journey Today
           </h2>
 
           <p className="mt-8 text-lg leading-8 text-neutral-600">

@@ -6,9 +6,14 @@ import Link from "next/link";
 
 import Logo from "@/../public/images/brand/Logo.png";
 
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import {
+  HiOutlineMenuAlt3,
+  HiOutlineBadgeCheck,
+  HiOutlineMail,
+} from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { FiArrowUpRight } from "react-icons/fi";
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -39,10 +44,45 @@ const Navbar = () => {
 
   return (
     <>
+      {/* ================= Top Stripe ================= */}
+
+      <div className="fixed top-0 left-0 z-50 w-full bg-[#a5222e] text-white">
+        <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-6 text-sm">
+          {/* Left */}
+          <div className="flex items-center gap-3">
+            <HiOutlineBadgeCheck className="text-lg" />
+            <span>
+              Welcome to{" "}
+              <span className="font-semibold">
+                Next Chapter Overseas PVT. LTD.
+              </span>
+            </span>
+
+            <span className="hidden h-4 w-px bg-white/40 sm:block" />
+
+            <span className="hidden items-center gap-2 sm:flex">
+              <HiOutlineMail className="text-base" />
+              Email:{" "}
+              <span className="font-semibold">info@dityaoverseas.com</span>
+            </span>
+          </div>
+
+          {/* Right */}
+          <div className="flex items-center gap-4">
+            <a href="#" aria-label="Instagram" className="hover:opacity-80">
+              <FaInstagram className="text-lg" />
+            </a>
+            <a href="#" aria-label="Facebook" className="hover:opacity-80">
+              <FaFacebookF className="text-lg" />
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* ================= Desktop Navbar ================= */}
 
       <header
-        className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
+        className={`fixed top-10 left-0 z-50 w-full transition-all duration-300 ${
           scrolled
             ? "border-b border-gray-200 bg-white/90 backdrop-blur-xl shadow-sm"
             : "bg-white"
@@ -102,25 +142,16 @@ const Navbar = () => {
 
       <div
         className={`fixed inset-0 z-[999] bg-white transition-all duration-500 ${
-          menuOpen
-            ? "visible opacity-100"
-            : "invisible opacity-0"
+          menuOpen ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
         <div className="flex h-full flex-col px-8 py-8">
           {/* Top */}
 
           <div className="flex items-center justify-between">
-            <Image
-              src={Logo}
-              alt="Logo"
-              className="h-10 w-auto"
-            />
+            <Image src={Logo} alt="Logo" className="h-10 w-auto" />
 
-            <button
-              onClick={() => setMenuOpen(false)}
-              aria-label="Close Menu"
-            >
+            <button onClick={() => setMenuOpen(false)} aria-label="Close Menu">
               <IoClose className="text-[38px]" />
             </button>
           </div>

@@ -1,11 +1,19 @@
 import { ArrowRight, Star } from "lucide-react";
 import Image from "next/image";
-import Himg from "@/../public/images/sections/Home/hero.png";
+import Himg from "@/../public/images/sections/Home/heroo.png";
+
+const marqueeItems = [
+  "Student Visa",
+  "IELTS Coaching",
+  "PTE Coaching",
+  "Visitor Visa",
+  "Career Counselling",
+];
 
 export default function Hero() {
   return (
     <section className="w-full bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
 
           {/* Image - Top on Mobile, Right on Desktop */}
@@ -62,7 +70,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="mt-10 w-full">
+            {/* <div className="mt-10 w-full">
               <p className="text-sm text-gray-400">
                 Popular Study Destinations
               </p>
@@ -73,11 +81,39 @@ export default function Hero() {
                 <span className="text-lg font-semibold">Australia</span>
                 <span className="text-lg font-semibold">Germany</span>
               </div>
-            </div>
+            </div> */}
           </div>
 
         </div>
       </div>
+
+      {/* Scrolling Marquee Stripe - blends with hero image bottom */}
+      <div className="relative w-full overflow-hidden bg-red-900 py-3 sm:py-4 -mt-6 sm:-mt-10 lg:-mt-14">
+        <div className="flex w-max animate-marquee">
+          {[0, 1].map((dupe) => (
+            <div key={dupe} className="flex shrink-0 items-center">
+              {marqueeItems.map((item, idx) => (
+                <span
+                  key={`${dupe}-${idx}`}
+                  className="flex items-center whitespace-nowrap px-4 sm:px-6"
+                >
+                  <span className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">
+                    {item}
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="ml-4 sm:ml-6 text-xl sm:text-2xl text-white"
+                  >
+                    ✳
+                  </span>
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      
     </section>
   );
 }

@@ -110,7 +110,7 @@ export default function Services() {
 
         {/* Cards */}
 
-        <div className="mt-16 grid gap-7 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-16 grid gap-7 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service, index) => {
             const Icon = service.icon;
 
