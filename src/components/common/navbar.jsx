@@ -18,9 +18,8 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 const navItems = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Industries", href: "/industries" },
-  { name: "Insights", href: "/blogs" },
+  { name: "Services", href: "/service" },
+  { name: "Testimonials", href: "/testimonials" },
   { name: "Contact", href: "/contact" },
 ];
 

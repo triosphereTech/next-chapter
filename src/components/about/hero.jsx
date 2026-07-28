@@ -9,7 +9,7 @@ import HeroImage from "@/../public/images/sections/Home/hero.png";
 const AboutHero = () => {
   return (
     <section className="bg-[#FAFAF9]">
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:pt-44">
 
         {/* Breadcrumb */}
 

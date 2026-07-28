@@ -1,3 +1,4 @@
+import FAQ from '@/components/common/FAQ'
 import Cta from '@/components/home/cta'
 import Hero from '@/components/home/hero'
 import Hero2 from '@/components/home/Hero2'
@@ -19,6 +20,7 @@ const page = () => {
     <WhyChooseUs/>
     <Testimonial/>
     <Cta/>
+    <FAQ/>
     </div>
     </>
   )

@@ -11,9 +11,9 @@ import CtaImage from "@/../public/images/sections/Home/cta.png";
 
 const Cta = () => {
   return (
-    <section className="py-14 px-4 sm:px-8 lg:px-16">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-[35px] bg-gradient-to-r from-[#84212E] via-[#8E2433] to-[#6F1B25]">
+    <section className="py-5 px-0 lg:px-16">
+      <div className="mx-auto max-w-7xl px-3   lg:px-8">
+        <div className="relative overflow-hidden rounded-xl lg:rounded-[35px] bg-gradient-to-r from-[#84212E] via-[#8E2433] to-[#6F1B25]">
           {/* Decorative Blur */}
           {/* <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#8B72B8]/10 blur-3xl" />
           <div className="absolute -right-20 bottom-10 h-64 w-64 rounded-full bg-[#5B7FA6]/10 blur-3xl" /> */}
