@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { GraduationCap, Globe2, ShieldCheck } from "lucide-react";
 
-import AboutImage from "@/../public/images/sections/Home/hero.png";
+import AboutImage from "@/../public/images/sections/about/about.jpg";
 
 const cards = [
   {
@@ -54,7 +54,7 @@ export default function WhoWeAre() {
 
           {/* Image */}
 
-          <div className="overflow-hidden rounded-[32px] bg-[#FAFAF9]">
+          <div className="hidden lg:block overflow-hidden rounded-[32px] bg-[#FAFAF9]">
             <Image
               src={AboutImage}
               alt="Students"
@@ -72,7 +72,7 @@ export default function WhoWeAre() {
               return (
                 <div
                   key={index}
-                  className="rounded-[28px] border border-[#ECECEC] bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#84212E]/20 hover:shadow-xl"
+                  className="rounded-[28px] border border-[#bb3232] bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#84212E]/20 hover:shadow-xl"
                 >
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#84212E]/10">
                     <Icon className="h-7 w-7 text-[#84212E]" />

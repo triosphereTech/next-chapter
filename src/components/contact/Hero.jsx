@@ -41,12 +41,12 @@ export default function Hero() {
 
         {/* Heading */}
 
-        <h1 className="mt-6 text-4xl font-bold leading-tight text-[#1F2430] md:text-6xl">
+        <h1 className="mt-6 font-semibold leading-tight text-[#1F2430] text-2xl md:text-4xl lg:text-5xl">
           Let's Build Your
           <br />
-          <span className="text-[#84212E]">
+          <i className="text-[#84212E]">
             Global Education Journey
-          </span>
+          </i>
         </h1>
 
         {/* Description */}

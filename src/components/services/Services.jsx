@@ -8,7 +8,7 @@ const services = [
     title: "Study Abroad Counselling",
     description:
       "Personalized guidance to help you choose the right country, university, and course based on your academic profile and career goals.",
-    image: "/images/services/counselling.jpg",
+    image: "/images/sections/services/study.png",
     points: [
       "Career & profile assessment",
       "Country selection",
@@ -20,7 +20,7 @@ const services = [
     title: "University Admissions",
     description:
       "End-to-end admission support, ensuring every application is accurate, complete, and submitted on time.",
-    image: "/images/services/admission.jpg",
+    image: "/images/sections/services/uni.png",
     points: [
       "Application preparation",
       "Document verification",
@@ -32,7 +32,7 @@ const services = [
     title: "Scholarship Assistance",
     description:
       "Helping students discover and apply for scholarships that reduce the financial burden of international education.",
-    image: "/images/services/scholarship.jpg",
+    image: "/images/sections/services/scholarship.jpg",
     points: [
       "Scholarship search",
       "Eligibility guidance",
@@ -44,7 +44,7 @@ const services = [
     title: "Student Visa Assistance",
     description:
       "Comprehensive visa guidance from documentation to interview preparation for a smooth approval process.",
-    image: "/images/services/visa.jpg",
+    image: "/images/sections/services/visa.jpg",
     points: [
       "Visa documentation",
       "Application filing",
@@ -56,7 +56,7 @@ const services = [
     title: "Education Loan Support",
     description:
       "Helping students understand education loan options and prepare the required documentation.",
-    image: "/images/services/loan.jpg",
+    image: "/images/sections/services/loan.jpg",
     points: [
       "Loan guidance",
       "Financial documentation",
@@ -68,7 +68,7 @@ const services = [
     title: "Pre-Departure Support",
     description:
       "Preparing students for life abroad with practical guidance before they leave for their destination.",
-    image: "/images/services/predeparture.jpg",
+    image: "/images/sections/services/predepature.png",
     points: [
       "Accommodation guidance",
       "Travel checklist",

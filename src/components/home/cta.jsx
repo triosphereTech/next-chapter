@@ -2,10 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import {
-  FaArrowRight,
-  FaPhoneAlt,
-} from "react-icons/fa";
+import { FaArrowRight, FaPhoneAlt } from "react-icons/fa";
 
 import CtaImage from "@/../public/images/sections/Home/cta.png";
 
@@ -30,11 +27,10 @@ const Cta = () => {
               </h2>
 
               <p className="mt-4 max-w-2xl text-base leading-7 text-white/80">
-                Whether you're planning to study in Canada, the UK,
-                Australia, Germany, or beyond, our experienced
-                counselors are here to guide you through university
-                selection, applications, scholarships, and visa
-                assistance.
+                Whether you're planning to study in Canada, the UK, Australia,
+                Germany, or beyond, our experienced counselors are here to guide
+                you through university selection, applications, scholarships,
+                and visa assistance.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -53,10 +49,11 @@ const Cta = () => {
             {/* Right Image */}
             <div className="hidden relative lg:flex justify-center self-center lg:justify-center">
               <Image
-  src={CtaImage}
-  alt="Student"
-  priority
-  className="w-[240px] sm:w-[290px] md:w-[340px] lg:w-[400px] xl:w-[450px] h-auto object-contain lg:translate-y-4"/>
+                src={CtaImage}
+                alt="Student"
+                priority
+                className="w-[240px] sm:w-[290px] md:w-[340px] lg:w-[400px] xl:w-[450px] h-auto object-contain lg:translate-y-4"
+              />
             </div>
           </div>
         </div>

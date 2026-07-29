@@ -20,6 +20,7 @@ export default function Hero() {
           <div className="order-1 lg:order-2 w-full">
             <div className="flex aspect-square w-full items-center justify-center rounded-2xl sm:aspect-video lg:aspect-square">
               <Image
+              alt="image"
               src={Himg}
               className="h-auto w-auto rounded-b-4xl object-contain"
               />

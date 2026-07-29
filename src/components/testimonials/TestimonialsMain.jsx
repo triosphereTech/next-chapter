@@ -81,10 +81,10 @@ export default function TestimonialsMain() {
             Student Success Stories
           </span>
 
-          <h2 className="mt-6 text-4xl font-bold leading-tight text-[#1F2430] md:text-5xl lg:text-6xl">
+          <h2 className="mt-6 font-semibold leading-tight text-[#1F2430] text-2xl md:text-4xl lg:text-5xl">
             Every Dream Has
             <br />
-            <span className="text-[#84212E]">A Success Story</span>
+            <i className="text-[#84212E]">A Success Story</i>
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#5C6070]">
