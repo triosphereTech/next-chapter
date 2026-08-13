@@ -104,7 +104,7 @@ export default function ContactForm() {
                 </p>
 
                 <h4 className="mt-1 text-lg font-semibold text-[#1F2430]">
-                  hello@example.com
+                  info@nextoverseas.com
                 </h4>
               </div>
             </a>
@@ -122,9 +122,11 @@ export default function ContactForm() {
                 </p>
 
                 <h4 className="mt-1 text-lg font-semibold text-[#1F2430]">
-                  Ahmedabad,
+                  T-6 Vikram chambers
                   <br />
-                  Gujarat, India
+                  Near sales india Income tax, <br /> Ahmedabad, Gujarat
+
+
                 </h4>
               </div>
             </div>

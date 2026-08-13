@@ -60,19 +60,21 @@ export default function Hero() {
         {/* Buttons */}
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-          <button className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#84212E] px-8 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#6F1B26]">
+          <a href="#booking" className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#84212E] px-8 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#6F1B26]">
             Book Free Consultation
-
             <ArrowRight
               size={18}
               className="transition-transform duration-300 group-hover:translate-x-1"
             />
-          </button>
+          </a>
 
-          <button className="group inline-flex items-center justify-center gap-3 rounded-full border border-[#84212E]/15 bg-white px-8 py-4 font-semibold text-[#84212E] transition-all duration-300 hover:-translate-y-1 hover:border-[#84212E] hover:bg-[#84212E]/5">
+          <a
+            href="tel:+916353157921"
+            className="group inline-flex items-center justify-center gap-3 rounded-full border border-[#84212E]/15 bg-white px-8 py-4 font-semibold text-[#84212E] transition-all duration-300 hover:-translate-y-1 hover:border-[#84212E] hover:bg-[#84212E]/5"
+          >
             <Phone size={18} />
             Call Our Experts
-          </button>
+          </a>
         </div>
 
         {/* Trust Points */}

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 import Stripe from "@/../public/images/sections/Home/stripe.png";
+import Link from "next/link";
 
 const StripeSection = () => {
   return (
@@ -33,10 +34,13 @@ const StripeSection = () => {
             </p>
 
             <div className="mt-8">
-              <button className="inline-flex items-center gap-3 rounded-xl bg-white px-7 py-3.5 font-semibold text-[#84212E] transition duration-300 hover:bg-[#F7F4EE]">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-3 rounded-xl bg-white px-7 py-3.5 font-semibold text-[#84212E] transition duration-300 hover:bg-[#F7F4EE]"
+              >
                 Book Free Consultation
                 <ArrowRight className="h-4 w-4" />
-              </button>
+              </Link>
             </div>
           </div>
 

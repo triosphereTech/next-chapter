@@ -1,6 +1,7 @@
 import { ArrowRight, Star } from "lucide-react";
 import Image from "next/image";
 import Himg from "@/../public/images/sections/Home/heroo.png";
+import Link from "next/link";
 
 const marqueeItems = [
   "Student Visa",
@@ -47,14 +48,14 @@ export default function Hero() {
             </p>
 
             <div className="mt-7 flex flex-wrap items-center gap-4">
-              <button className="rounded-lg bg-red-900 px-6 py-3 text-sm sm:text-base font-semibold text-white transition hover:bg-red-800">
+              <Link href="/contact" className="rounded-lg bg-red-900 px-6 py-3 text-sm sm:text-base font-semibold text-white transition hover:bg-red-800">
                 Book Free Consultation
-              </button>
+              </Link>
 
-              <button className="inline-flex items-center gap-2 rounded-lg border border-gray-300 px-6 py-3 text-sm sm:text-base font-semibold text-gray-900 transition hover:border-gray-400">
+              <Link href="/service" className="inline-flex items-center gap-2 rounded-lg border border-gray-300 px-6 py-3 text-sm sm:text-base font-semibold text-gray-900 transition hover:border-gray-400">
                 Explore Universities
                 <ArrowRight className="h-4 w-4" />
-              </button>
+              </Link>
             </div>
 
             <div className="mt-7 flex items-center gap-3">

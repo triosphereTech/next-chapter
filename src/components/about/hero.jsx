@@ -54,7 +54,7 @@ const AboutHero = () => {
             </Link>
 
             <Link
-              href="/services"
+              href="/service"
               className="inline-flex items-center gap-2 rounded-xl border border-[#DDD] bg-white px-7 py-4 font-semibold text-[#1F2430] transition hover:border-[#84212E] hover:text-[#84212E]"
             >
               Explore Services

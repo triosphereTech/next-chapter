@@ -135,10 +135,10 @@ export default function Services() {
                   {service.description}
                 </p>
 
-                <div className="mt-8 inline-flex items-center gap-2 font-semibold text-neutral-900 transition-all duration-300 group-hover:gap-3">
+                {/* <div className="mt-8 inline-flex items-center gap-2 font-semibold text-neutral-900 transition-all duration-300 group-hover:gap-3">
                   Learn More
                   <FiArrowUpRight className="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />
-                </div>
+                </div> */}
               </div>
             );
           })}
@@ -148,7 +148,7 @@ export default function Services() {
 
         <div className="mt-16 flex justify-center">
           <Link
-            href="/services"
+            href="/service"
             className="group inline-flex items-center gap-3 rounded-full bg-neutral-900 px-7 py-4 text-[16px] font-medium text-white transition-all duration-300 hover:bg-black"
           >
             View All Services

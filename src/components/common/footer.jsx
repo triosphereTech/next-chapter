@@ -121,9 +121,10 @@ const Footer = () => {
                 <FaMapMarkerAlt className="mt-1 text-[#D3AF5F]" />
 
                 <p className="leading-7 text-white/70">
-                  Your Office Address,
+                  T-6 Vikram chambers 
                   <br />
-                  City, State, India
+                 Near sales india 
+                 Income tax , Ahmedabad, Gujarat
                 </p>
               </div>
 
@@ -140,7 +141,7 @@ const Footer = () => {
                 className="flex items-center gap-3 text-white/70 transition hover:text-[#D3AF5F]"
               >
                 <FaEnvelope className="text-[#D3AF5F]" />
-                info@example.com
+                info@nextoverseas.com
               </a>
             </div>
           </div>
@@ -150,7 +151,7 @@ const Footer = () => {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-5 border-t border-white/10 pt-8 text-sm text-white border-white/60 md:flex-row">
           <p>
-            © {year} Your Company Name. All Rights Reserved.
+            © {year} Next Overseas. All Rights Reserved.
           </p>
 
           <div className="flex flex-wrap text-white justify-center gap-6">

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   FiUserCheck,
   FiCompass,
@@ -264,13 +265,13 @@ export default function WhyChooseUsBento() {
 
         {/* CTA */}
         <div className="mt-16 flex justify-center">
-          <a
-            href="#consultation"
+          <Link
+            href="/contact"
             className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-slate-900/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-slate-800 hover:shadow-xl hover:shadow-slate-900/15"
           >
             Book Your Free Consultation
             <FiArrowUpRight className="h-5 w-5" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -7,7 +7,9 @@ const page = () => {
   return (
     <>
       <Hero />
+      <div id="booking">
       <ContactForm />
+      </div>
       <GoogleMap />
     </>
   )

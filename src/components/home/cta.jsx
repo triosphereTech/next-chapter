@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FaArrowRight, FaPhoneAlt } from "react-icons/fa";
 
 import CtaImage from "@/../public/images/sections/Home/cta.png";
+import Link from "next/link";
 
 const Cta = () => {
   return (
@@ -34,15 +35,21 @@ const Cta = () => {
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
-                <button className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 font-semibold text-[#84212E] transition-all duration-300 hover:-translate-y-1 hover:bg-[#F8F3EA]">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 font-semibold text-[#84212E] transition-all duration-300 hover:-translate-y-1 hover:bg-[#F8F3EA]"
+                >
                   Book Free Consultation
                   <FaArrowRight />
-                </button>
+                </Link>
 
-                <button className="inline-flex items-center gap-3 rounded-full border border-white/25 bg-transparent px-7 py-4 font-semibold text-white transition-all duration-300 hover:bg-white hover:text-[#84212E]">
+                <a
+                  href="tel:+916353157921"
+                  className="inline-flex items-center gap-3 rounded-full border border-white/25 bg-transparent px-7 py-4 font-semibold text-white transition-all duration-300 hover:bg-white hover:text-[#84212E]"
+                >
                   <FaPhoneAlt />
                   Contact Us
-                </button>
+                </a>
               </div>
             </div>
 

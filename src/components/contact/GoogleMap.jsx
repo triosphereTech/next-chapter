@@ -56,7 +56,7 @@ export default function GoogleMap() {
         <div className="mt-14 overflow-hidden rounded-[32px] border border-black/5 bg-white p-3 shadow-sm">
           <iframe
             title="Google Map"
-            src="https://www.google.com/maps?q=Ahmedabad,Gujarat&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.6901012152543!2d72.5696062!3d23.038312400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e845fc38a792b%3A0x6f8c2664537dfbf7!2sVikram%20Chambers%2C%20Income%20Tax%20Cross%20Roads%2C%20Nr.%20Sales%20India%2C%20Ashram%20Rd%2C%20Shreyas%20Colony%2C%20Navrangpura%2C%20Ahmedabad%2C%20Gujarat%20380009!5e1!3m2!1sen!2sin!4v1786607006733!5m2!1sen!2sin"
             className="h-[500px] w-full rounded-[24px]"
             loading="lazy"
             allowFullScreen
