@@ -129,11 +129,11 @@ const Footer = () => {
               </div>
 
               <a
-                href="tel:+911234567890"
+                href="tel:+917600017132"
                 className="flex items-center gap-3 text-white/70 transition hover:text-[#D3AF5F]"
               >
                 <FaPhoneAlt className="text-[#D3AF5F]" />
-                +91 12345 67890
+                +91 76000 17132
               </a>
 
               <a

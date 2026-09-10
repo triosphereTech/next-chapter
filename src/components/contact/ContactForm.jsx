@@ -83,7 +83,7 @@ export default function ContactForm() {
                 </p>
 
                 <h4 className="mt-1 text-lg font-semibold text-[#1F2430]">
-                  +91 98765 43210
+                  +91 76000 17132
                 </h4>
               </div>
             </a>
@@ -228,7 +228,7 @@ export default function ContactForm() {
 
                 <input
                   type="tel"
-                  placeholder="+91 98765 43210"
+                  placeholder="+91 76000 17132"
                   className="h-14 w-full rounded-2xl border border-black/5 bg-[#FAFAF9] px-5 outline-none transition-all duration-300 focus:border-[#84212E] focus:bg-white"
                 />
               </div>
