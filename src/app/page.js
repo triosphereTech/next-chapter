@@ -8,6 +8,7 @@ import StripeSection from '@/components/home/stripe'
 import Testimonial from '@/components/home/Testimonial'
 import WhyChooseUs from '@/components/home/whychooseus'
 import React from 'react'
+import { BluginFaq } from "@blugin/next"; // or "@blugin/react"
 
 const page = () => {
   return (
@@ -20,7 +21,8 @@ const page = () => {
     <WhyChooseUs/>
     <Testimonial/>
     <Cta/>
-    <FAQ/>
+    {/* <FAQ/> */}
+    <BluginFaq slug="home-page" />
     </div>
     </>
   )

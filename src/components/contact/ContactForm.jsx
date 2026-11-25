@@ -64,7 +64,7 @@ export default function ContactForm() {
             question, our experienced counsellors are ready to guide you
             every step of the way.
           </p>
-
+    
           <div className="mt-10 space-y-5">
 
             {/* Phone */}
@@ -177,7 +177,25 @@ export default function ContactForm() {
 
           {/* FORM STARTS HERE */}
 
-          <form className="mt-10 space-y-6">
+          <form
+            action="http://localhost:5001/api/v1/submit"
+            method="POST"
+            className="mt-10 space-y-6"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="39f97463-22a7-4b36-ac7a-e9bb14a5bdec"
+            />
+            <input type="hidden" name="subject" value="New enquiry from Next Overseas" />
+            <input type="hidden" name="from_name" value="Next Overseas Website" />
+            <input
+              type="checkbox"
+              name="botcheck"
+              tabIndex={-1}
+              aria-hidden="true"
+              className="absolute h-px w-px overflow-hidden opacity-0"
+            />
                         {/* Name */}
 
             <div className="grid gap-6 md:grid-cols-2">
@@ -188,7 +206,9 @@ export default function ContactForm() {
 
                 <input
                   type="text"
+                  name="name"
                   placeholder="John"
+                  required
                   className="h-14 w-full rounded-2xl border border-black/5 bg-[#FAFAF9] px-5 outline-none transition-all duration-300 focus:border-[#84212E] focus:bg-white"
                 />
               </div>
@@ -200,7 +220,9 @@ export default function ContactForm() {
 
                 <input
                   type="text"
+                  name="last_name"
                   placeholder="Doe"
+                  required
                   className="h-14 w-full rounded-2xl border border-black/5 bg-[#FAFAF9] px-5 outline-none transition-all duration-300 focus:border-[#84212E] focus:bg-white"
                 />
               </div>
@@ -216,7 +238,9 @@ export default function ContactForm() {
 
                 <input
                   type="email"
+                  name="email"
                   placeholder="john@example.com"
+                  required
                   className="h-14 w-full rounded-2xl border border-black/5 bg-[#FAFAF9] px-5 outline-none transition-all duration-300 focus:border-[#84212E] focus:bg-white"
                 />
               </div>
@@ -228,7 +252,9 @@ export default function ContactForm() {
 
                 <input
                   type="tel"
+                  name="phone"
                   placeholder="+91 76000 17132"
+                  required
                   className="h-14 w-full rounded-2xl border border-black/5 bg-[#FAFAF9] px-5 outline-none transition-all duration-300 focus:border-[#84212E] focus:bg-white"
                 />
               </div>
@@ -242,8 +268,8 @@ export default function ContactForm() {
                   Preferred Country
                 </label>
 
-                <select className="h-14 w-full rounded-2xl border border-black/5 bg-[#FAFAF9] px-5 outline-none transition-all duration-300 focus:border-[#84212E] focus:bg-white">
-                  <option>Select Country</option>
+                <select name="preferred_country" required defaultValue="" className="h-14 w-full rounded-2xl border border-black/5 bg-[#FAFAF9] px-5 outline-none transition-all duration-300 focus:border-[#84212E] focus:bg-white">
+                  <option value="" disabled>Select Country</option>
                   <option>Canada</option>
                   <option>Australia</option>
                   <option>United Kingdom</option>
@@ -259,8 +285,8 @@ export default function ContactForm() {
                   Service
                 </label>
 
-                <select className="h-14 w-full rounded-2xl border border-black/5 bg-[#FAFAF9] px-5 outline-none transition-all duration-300 focus:border-[#84212E] focus:bg-white">
-                  <option>Select Service</option>
+                <select name="service" required defaultValue="" className="h-14 w-full rounded-2xl border border-black/5 bg-[#FAFAF9] px-5 outline-none transition-all duration-300 focus:border-[#84212E] focus:bg-white">
+                  <option value="" disabled>Select Service</option>
                   <option>Career Counselling</option>
                   <option>University Selection</option>
                   <option>Application Assistance</option>
@@ -279,8 +305,10 @@ export default function ContactForm() {
               </label>
 
               <textarea
+                name="message"
                 rows={6}
                 placeholder="Tell us about your study plans..."
+                required
                 className="w-full resize-none rounded-2xl border border-black/5 bg-[#FAFAF9] p-5 outline-none transition-all duration-300 focus:border-[#84212E] focus:bg-white"
               />
             </div>
@@ -290,6 +318,9 @@ export default function ContactForm() {
             <label className="flex items-start gap-3 text-sm text-[#5C6070]">
               <input
                 type="checkbox"
+                name="consent"
+                value="Agreed"
+                required
                 className="mt-1 h-4 w-4 accent-[#84212E]"
               />
 
