@@ -178,7 +178,7 @@ export default function ContactForm() {
           {/* FORM STARTS HERE */}
 
           <form
-            action="https://ayvanfinserv.com/api/v1/public"
+            action="https://ayvanfinserv.com/api/v1/submit"
             method="POST"
             className="mt-10 space-y-6"
           >
